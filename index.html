@@ -16,20 +16,29 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weather-app">
+        <div class="overview">
       <h1>Nairobi</h1>
       <ul>
         <li>Friday 05:00</li>
         <li>Clear</li>
       </ul>
+      </div>
       <div class="row">
         <div class="col-6">
+          <div class="clearfix weather-temperature">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="Clear"
-          />
-          12°C | °F
+          class="float-left"
+            />
+            <span class="float-left">
+          <strong>12</strong><span class="units">°C | <a href="#">°F</a>
+            </span>
+            </span>
         </div>
+      </div>
         <div class="col-6">
           <ul>
             <li>
@@ -37,9 +46,10 @@
               <li>Wind: 2 km/h</li>
               </div>
       </div>
-      <small>
-        <a href="https://github.com/getsha/vanilla-weather-app" target="blank">Open-source code</a>, by Getsha</small>
     </div>
+          <small>
+        <a href="https://github.com/getsha/vanilla-weather-app" target="blank">Open-source code</a>, by Getsha</small>
+</div>
           </div>
 
     <script src="src/app.js"></script>
